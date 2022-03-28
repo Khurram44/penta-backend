@@ -1,16 +1,16 @@
 const mysql = require('mysql')
 
 // create database connection
-const dbConnection = mysql.createConnection({
-    host: "localhost",
-    user :"root",
-    password: "",
-    database:"penta"
+const dbConnection = mysql.createPool({
+    host: "184.168.101.228",
+    user :"Khurram7844",
+    password: "Khurram7844",
+    database:"pentaDB"
 })
 
 // calling to connect
 function connection(){
-dbConnection.connect(function(error){
+dbConnection.getConnection(function(error){
     if(error) throw error
     console.log("database connected succesfully")
 })
