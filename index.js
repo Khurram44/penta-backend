@@ -46,6 +46,9 @@ const notification = require("./src/api/routes/Notifications/notification")
 const orders = require("./src/api/routes/Orders/order")
 const cart_items = require("./src/api/routes/Cart/cart")
 const create_cart = require("./src/api/routes/Cart/create")
+const itemsCategory = require("./src/api/routes/Foods/ItemsCategory/items_category")
+const foodProducts = require("./src/api/routes/Foods/Products/products")
+const resturants = require("./src/api/routes/Foods/Resturants/resturants")
 //Create routes
 app.use('/users',userRoutes)
 app.use('/auth', authRoutes)
@@ -56,6 +59,9 @@ app.use('/notification',notification)
 app.use('/orders',orders)
 app.use('/cart_items',cart_items)
 app.use('/create_cart',create_cart)
+app.use('/items_category',itemsCategory)
+app.use('/food_products',foodProducts)
+app.use('/resturants',resturants)
 
 
 //Listening to the port

@@ -2,10 +2,14 @@ const mysql = require('mysql')
 
 // create database connection
 const dbConnection = mysql.createPool({
-    host: "184.168.101.228",
-    user :"Khurram7844",
-    password: "Khurram7844",
-    database:"pentaDB"
+    // host: "184.168.101.228",
+    // user :"Khurram7844",
+    // password: "Khurram7844",
+    // database:"pentaDB"
+    host: "localhost",
+    user :"root",
+    password: "",
+    database:"penta"
 })
 
 // calling to connect
